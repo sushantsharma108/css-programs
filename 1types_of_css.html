@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TUTORIAL</title>
+    <style>
+        p{
+            color: rgb(34, 6, 59);
+            background-color: crimson !important;
+        }
+    </style>
+    <!-- In the above style tag, you can define various css properties & its called Internal CSS but Inline CSS will get prefernce over Internal
+        CSS. And the Style tag is defined in the Head tag of the HTML program.-->
+        <!-- If you want to add your external CSS file in the HTML Program, then you can do that using link tag in the head tag. -->
+        <link rel="stylesheet" href="types_of_css.css">
+        <!-- In case of CSS, whichever thing you add in as CSS then the preference is given to the latest CSS properties which you added.
+        For example, In above line if you place the link tag before style tag then style tag will take the preference in the web page. 
+        BUT IF YOU WANT THAT YOUR DEFINED CSS WILL TAKE PREFERENCE THAN OTHERS THEN YOU CAN ADD THE ATTRIBUTE "!important(with exclamation mark)"
+        AFTER THE DEFINED PROPERTY like: color: blueviolet !important;-->
+    </head>
+<body>
+    <h3>This is CSS tutorial.</h3>
+    <!-- <p style="color: darkgreen; background-color: bisque;">This tutorial will teach you everything you need to know about HTML/CSS.</p> -->
+    <!--In the above line the style attribute represents the "Inline CSS" which is not a good practice since it is difficult to maintain
+    the Code written in a program.-->
+    <p>This tutorial will teach you everything you need to know about HTML/CSS.</p>
+</body>
+</html>
