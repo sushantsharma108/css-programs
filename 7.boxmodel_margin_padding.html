@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model, Margins and Padding</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /*We uses the box-sizing property so that our content in the boxes adjust itself accordingly to the    defined width and heigt of a box in a web page.*/
+            margin: 0;
+            padding: 0;
+            /* By default, the padding and margin of the content will follow above margin and padding properties in a webpage as above but you can overwrite them with the help of the classes and id's like it has been done below.*/
+        }
+
+        /* The (*) is a Universal Selector which selects all the content and modify it according to the defined properties in it. */
+        .container {
+            background-color: rgb(124, 143, 184);
+            border: 15px solid rgb(243, 209, 216);
+            /* padding-top: 39px; */
+            /* padding-bottom: 39px; */
+            /* padding-left: 39px; */
+            /* padding-right: 39px; */
+            /* If you wanna write margin/padding for top,bottom,left and right in a single line then we can use padding/margin: top right bottom left(you've to write size of pixel in px unit.)*/
+            margin: 50px 25px 48px 69px;
+            padding: 50px 25px 48px 69px;
+            /* If you wanna write margin/padding for x and y axis in a single line then we can use "padding: y(top/bottom) x(left/right)"(in px)as shown below.*/
+            /* margin: 15px 10px; */
+            /* padding: 15px 10px; */
+            border-radius: 25px;
+            width: 500px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is a CSS Box Model,Margin and Padding Tutorial.</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et unde dignissimos aliquid corporis
+            ratione. Atque molestias, ducimus aliquid odio eos in rerum quisquam reprehenderit reiciendis eligendi
+            consequatur labore accusamus asperiores! Ut mollitia odit accusantium. Blanditiis, impedit distinctio? Culpa
+            veniam, reiciendis nostrum voluptatibus ut aperiam in nihil corporis inventore itaque numquam.</p>
+        <!-- If you wanna create the above line by using a shortcut then use p#first and Press Enter and its also used if yoou wanna create the tag with an id like done below.-->
+        <!-- <h3 id="first"></h3> -->
+    </div>
+
+    <div class="container">
+        <h3>This is a CSS Box Model,Margin and Padding Tutorial.</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et unde dignissimos aliquid corporis
+            ratione. Atque molestias, ducimus aliquid odio eos in rerum quisquam reprehenderit reiciendis eligendi
+            consequatur labore accusamus asperiores! Ut mollitia odit accusantium. Blanditiis, impedit distinctio? Culpa
+            veniam, reiciendis nostrum voluptatibus ut aperiam in nihil corporis inventore itaque numquam.</p>
+        <!-- If you wanna create the above line by using a shortcut then use p#first and Press Enter and its also used if yoou wanna create the tag with an id like done below.-->
+        <!-- <h3 id="first"></h3> -->
+    </div>
+    <div class="container">
+        <h3>This is a CSS Box Model,Margin and Padding Tutorial.</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et unde dignissimos aliquid corporis
+            ratione. Atque molestias, ducimus aliquid odio eos in rerum quisquam reprehenderit reiciendis eligendi
+            consequatur labore accusamus asperiores! Ut mollitia odit accusantium. Blanditiis, impedit distinctio? Culpa
+            veniam, reiciendis nostrum voluptatibus ut aperiam in nihil corporis inventore itaque numquam.</p>
+        <!-- If you wanna create the above line by using a shortcut then use p#first and Press Enter and its also used if yoou wanna create the tag with an id like done below.-->
+        <!-- <h3 id="first"></h3> -->
+    </div>
+
+</body>
+
+</html>

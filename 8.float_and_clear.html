@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: auto;
+        }
+        .container{
+            width: 900px;
+            border: 3px solid purple;
+            margin: auto;  It aligns the box to the center
+        }
+        .item{
+            border: 3px solid rgb(21, 5, 66);
+            margin: 12px 3px;
+            padding: 12 px 3px;
+            /* background-color: rgb(44, 155, 175); */
+            background-color: sandybrown;
+        }
+        #fruits{
+            float: left;
+            width: 48%;
+            padding-left: 10px;
+        }
+        #computer{
+            float: right;
+            width: 48%;
+            padding-left: 10px;
+            clear: both;
+        }
+        #stationary{
+            float: left;
+            width: 50%;
+            padding-left: 10px;
+            clear: both;
+        }
+        #glasses{
+            float: right;
+            width: 50%;
+            padding-left: 10px;
+            clear: both;
+        }
+        /* Clear is the property which is used to overcome the overlapping of floats on the other boxes or floats.
+        And if you want that no float overlap the other so you can use clear: both for left and right floats. */
+        p,h3{
+            /* text-align: right;
+            text-align: left;
+            text-align: center; */
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome To my Store...</h1>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nisi itaque id neque quos natus ab vitae distinctio ipsam, a expedita rerum incidunt rem reprehenderit. Quisquam nam quis consequuntur fugiat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut nesciunt molestias odit, in unde, distinctio quos accusamus illo earum eaque tempora possimus. Autem mollitia sed reiciendis repellat esse cupiditate iste.</p>
+        </div>
+        
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nisi itaque id neque quos natus ab vitae distinctio ipsam, a expedita rerum incidunt rem reprehenderit. Quisquam nam quis consequuntur fugiat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque aspernatur corrupti qui molestiae, expedita vel atque optio tempore fugit ut nam sed dicta distinctio deserunt nemo sequi dolores laborum sunt.</p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nisi itaque id neque quos natus ab vitae distinctio ipsam, a expedita rerum incidunt rem reprehenderit. Quisquam nam quis consequuntur fugiat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla eum sit, veniam similique cupiditate maiores hic totam? Cumque deserunt aliquid quo, magni facere eum quod molestias laborum quia enim aperiam!</p>
+        </div>
+
+        <div id="glasses" class="item">
+            <h3>Glasses</h3>
+            <p id="glassespara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nisi itaque id neque quos natus ab vitae distinctio ipsam, a expedita rerum incidunt rem reprehenderit. Quisquam nam quis consequuntur fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi deserunt nobis neque earum, fugit necessitatibus vel soluta nesciunt consequuntur eaque dolorum nisi facilis illo. Magni quaerat minus eius perspiciatis corporis?</p>
+        </div>
+    </div>
+</body>
+</html>

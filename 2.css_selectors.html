@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <!-- Below we've used the Internal CSS instead of Inline and External CSS -->
+    <style>
+        /* Element Selector */
+        ol{
+            color: red;
+        }
+        /* Now ".redElement" is a class so we will refer it by (.)dot operator,but if it will be "id" of an element then 
+        we will refer it by # symbol.*/
+        /* Id Selector */
+        #firstPara {
+            color: greenyellow;
+            background-color: black;
+        }
+        /* Class Selector */
+        .redElement {
+            color: red;
+            background-color: burlywood;
+        }
+        /* Id Selector */
+        #thirdPara {
+            color: blueviolet;
+        }
+        /* Class Selector */
+        .bgGreen {
+            color: black;
+            background-color: darkgoldenrod;
+        }
+        /* Grouping selector.*/
+        footer,span{
+            background-color: chocolate;
+        }
+        /* As you seen above that if you provide an id to a tag then and later you provide a class to that element then
+        the properties you've defined in that id element are preferred over class properties- ITS IMPORTANT.*/
+        /* If you will write only element selector like only p-paragraph then it will select all the paragraphs
+    inside the web page. But if you want to select only a particular para and have to give some specific properties
+    to it then you've to use the id for a tag like below. */
+    </style>
+</head>
+
+<body>
+    <h3>CSS Selectors</h3>
+    <p id="firstPara">This is a simple paragraph to demonstrate css selectors.</p>
+    <p id="secondPara" class="redElement">This is a another simple paragraph to demonstrate css selectors.</p>
+    <!-- id is denoted by # symbol and id is always unique and  id's are used to give specific properties to the tags 
+        but classes can be multiple. -->
+    <!-- If you write a class name after writing the id of an element then you have to remove the pound symbol and 
+        replace it with the (.)dot before class name like shown above. -->
+        <p id="thirdPara" class="bgGreen">This is a another simple paragraph to demonstrate css selectors.</p>
+    <div>
+        <p>This is yet another simple paragraph inside div to demonstrate css selectors.</p>
+        <span>This is a span.</span>
+    </div>
+    <p>There are three types of selectors.</p>
+    <ol type="1">
+        <li>Element Selector</li>
+        <li>Id Selector</li>
+        <li>Class Selector</li>
+        <li>Grouping Selector</li>
+    </ol>
+    <footer>This is a Footer</footer>
+</body>
+
+</html>
