@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors and More</title>
+    <style>
+        .container{
+            border: 2px solid brown;
+            background-color: rgb(196, 190, 229);
+            padding: 34px;
+            margin: auto auto;  /*Here the margin is set on auto on the both x and y axes.*/
+            width: 666px;
+
+        }
+        a{
+            text-decoration: none;
+            /* If you wanna remove the underline in the hyperlink then use text-decoration: none.*/
+        }
+        a:hover{
+            color: black;
+            background-color: yellow;
+        }
+        a:visited{
+            color: purple;
+        }
+        a:active{
+            background-color: cornflowerblue;
+        }
+       .btn{
+            border: none;
+            border-radius: 10px;
+            background-color: coral;
+            color: black;
+            padding: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+       } 
+       .btn:hover{
+           background-color: aqua;
+           border: 2px solid black;
+       }
+       /* Above defined all the selectors are known as Pseudo Selectors. */
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <!-- If you wanna write the above line using the shortcut then use div.container#cont1 which indicates that you have to make a div with class container and with an id named cont1.-->
+        <h3>This is my heading.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eligendi sit aliquam ducimus nulla illo sapiente quisquam consequatur officia cum delectus fuga aspernatur molestias repudiandae laborum qui eos odio, dolor, quidem sunt nesciunt fugiat!</p>
+        <a href="https://google.com" class="btn">Read More</a>
+        <button class="btn">Contact Us</button>
+    </div>
+</body>
+</html>

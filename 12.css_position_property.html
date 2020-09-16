@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            background-color: grey;
+            height: 3500px;
+        }
+
+        .box {
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+
+        /* CSS Positions: static(default),relative,absolute,fixed,sticky */
+        #box3 {
+            position: fixed; /*This position helps us when we want to add some things in a chat apps which have to be fixed on the screen.*/
+            right: 4px;
+            /* top:2px; */
+            bottom: 2px;
+            /* top:35px;
+            left: 130px; */
+            /* relative: relative to its normal position. By writing this you can change the position of the elements relatively but it will leave a gap at its first parent position.*/
+            /* fixed: relative to the Browser Window. */
+        }
+
+        #box4 {
+            position: sticky;
+            /* This position helps us when we want to make a menu which is gonnna be sticked on the screen when user scrolls onto the screen.  */
+            top: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Chat With Us</div>
+        <div class="box" id="box4">Hey There!!!</div>
+    </div>
+</body>
+
+</html>
