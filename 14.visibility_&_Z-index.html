@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility & Z-index</title>
+</head>
+<style>
+    .box {
+        /* display: inline-block; */
+        width: 170px;
+        height: 170px;
+        border: 2px solid black;
+    }
+
+    #box1 {
+        background-color: green;
+        /* visibility: hidden; */
+        /*This(visibility) property is used to hide the elements on the web pages but its place is always reserved  even if it's hidden */
+        /* display: none; */
+        /* This property is used to completely eliminate the element and its space is not reserved. */
+    }
+
+    /* Z-index specifies the stacking level of elements in a positioned box. */
+    #box2 {
+        background-color: red;
+        position: relative;
+        top: 50px;
+        z-index: 50;
+    }
+
+    #box3 {
+        background-color: orange;
+        position: relative;
+        top: 1px;
+        z-index: 100;
+    }
+
+    #box4 {
+        background-color: blueviolet;
+        top: 1px;
+    }
+
+    /* Z-index will not work on the static(default) position. It will onlly work on the absolute,relative,fixed and stiicky positions.  */
+</style>
+
+<body>
+    <!-- The below 4 divs can be created simultaneously by writing ""div.box#box$*4""(inverted commas not included) and the $ sign in used to provide the number to the box id's-->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+
+</body>
+
+</html>
