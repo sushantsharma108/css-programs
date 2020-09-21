@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On CSS Selectors</title>
+</head>
+<style>
+    h1{
+        background-color: orange;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+    }
+    p{
+        background-color: rgb(206, 175, 206);
+        border: 2px solid brown;
+        font-weight: bold;
+    }
+    /* div p{
+        color: navy;
+        font-weight: bold;
+        background-color: olivedrab;
+    } */
+    div li p{
+        color: white;
+        font-weight: bold;
+        background-color: black;
+    }
+    
+    /* div > p{
+        color: blueviolet;
+    } */
+    
+    /* Now this(div > p) selector is used when you want to apply the property to the direct child(which is just inside the div tag) of the div tag for which we've used the ">" sign to indicate the direct child of a tag & this property can also be applied onto the other tags.*/
+    
+    div + p{
+        color: black;
+        background-color: yellow;
+    }
+    /* Now this selector is used when we want to apply prop on that element whose just before sibling is a div tag*/
+</style>
+<body>
+    <h1>This is more on Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is a paragraph</p></li>
+                <li>This line will not get affected.</li>
+            </ul>
+        </div>
+        <p>This is second paragraph.</p>
+    </div>
+    <p>This is the outer most paragraph.</p>
+</body>
+</html>
