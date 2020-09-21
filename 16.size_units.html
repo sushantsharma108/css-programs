@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Units</title>
+</head>
+<style>
+    html {
+        font-size: 25px;
+    }
+
+    .container {
+        font-size: 10px;
+        border: 2px solid red;
+        /* width: 800px; */
+        /* height: 950px; */
+        width: 40vw;
+        height: 90vh;
+        /* The above method of setting width and height of the container in aweb page is very inefficient method, so that we can use "viewport-width(vw)" and "viewport-height(vh)"  */
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #first {
+        /* font-size: 3em; */
+        /* em is the font unit which will enhance the size of the element or font as much as n times defined as em which is defined in parent container. And em unit is used when you want that if resizing of the parent containner takes place then the child items of that container will also resizee.*/
+        /* padding: 3em;  */
+        /* Now padding of 30px(3em * 10px) is not allocated but it will be of 90px since the padding will be allocated using the font-size which is 3em=30px and padding is multiplied by 30px *3 = 90px*/
+    }
+
+    #second {
+        /* font-size: 3rem; */
+        /* padding: 3rem; */
+        /* By using rem unit, the element resizes itself according to the size of the root element of a web page. For example: the font size is 3em in #second but that 3em is multiplied by the font-size of html which is 25px and calculated value is 75px = 25px*3rem */
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading.</h1>
+        <h1 id="second">This is second heading.</h1>
+        <h1 id="third">This is third heading.</h1>
+    </div>
+</body>
+
+</html>
