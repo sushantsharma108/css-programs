@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <!-- Media Queries is a method which is used when your screen width or height is changed, then we've to add some specific CSS in the web page.-->
+</head>
+<style>
+    .box{
+        font-size: 3rem;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        display: none;
+        height: 5em;
+    }
+    @media (max-width: 300px){
+        #box-1{
+            display: block;
+            background-color: cyan;
+        }
+    }
+    
+    @media only screen and (min-width: 300px) and (max-width: 500px){
+        #box-2{
+            display: block;
+            background-color: violet;
+        }
+    }
+    /* We are writing "only screen and " bcoz we only want to support the screen media type but there are also many media types in the CSS. So if we want to support the multiple media types then we have to add the other media types after writing @media.*/
+
+    @media only screen and (min-width: 500px) and (max-width: 800px){
+        #box-3{
+            display: block;
+            background-color: rgb(112, 207, 49);;
+        }
+    }
+
+    @media (min-width: 800px){ /*Here we don't need to specify the max-width bcoz we want to aplly the css by default to max-width */
+        #box-4{
+            display: block;
+            background-color: rgb(226, 171, 52);
+        }
+    }
+</style>
+
+<body>
+    <div class="box" id="box-1">I'm an Iphone</div>
+    <div class="box" id="box-2">I'm a Tablet </div>
+    <div class="box" id="box-3">I'm a MacBook</div>
+    <div class="box" id="box-4">I'm an Android Mobile</div>
+</body>
+</html>
